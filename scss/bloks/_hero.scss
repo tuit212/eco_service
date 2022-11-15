@@ -2,8 +2,10 @@
 .hero-section{
     background-color: #00AEEF;
     padding: 110px 0 20px 0;
+    position: relative;
 
     .hero{
+        position: relative;
 
         &__item{
             @include center (space-between);
@@ -25,20 +27,82 @@
                 position: relative;
                 transition: all 0.3s;
 
-                &-dropdovn{
-                    padding: 0;
-                    margin: 0;
-                    position: absolute;
-                    z-index: 9999;
-                    width: 100vw;
-                    left: -145px;
-                    background-color: rgb(34, 5, 5);
-                    padding-left: 145px;
-                    top: 45px;
-                    display: none;
-                }
+                // &-dropdovn{
+                //     padding: 0;
+                //     margin: 0;
+                //     position: absolute;
+                //     z-index: 9999;
+                //     width: 100vw;
+                //     left: -149px;
+                //     background-color: rgb(34, 5, 5);
+                //     padding-left: 145px;
+                //     top: 45px;
+                //     // display: none;
+                // }
 
             }
         }
     }
+}
+
+.dropdovn{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 150px;
+    background-color: rgb(255, 255, 255);
+    // width: 100vw;
+    width: 100%;
+
+
+
+
+
+
+    display: none;
+    z-index: 9999;
+
+}
+
+.dropdovn-two{
+    display: none;
+
+
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 150px;
+    background-color: rgb(255, 255, 255);
+    // width: 100vw;
+    width: 100%;
+    z-index: 9999;
+}
+.hero__item-list-dropdovn{
+    padding: 0;
+    margin: 0;
+    width: 33%;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0;
+}
+.hero__item-list-dropdovn-list{
+    position: relative;
+    cursor: pointer;
+    padding: 7px;
+}
+.hero__item-list-dropdovn-list:hover{
+    background-color: rgba(0, 0, 0, 0.144);
+    color: #00AEEF;
+    // margin-left: 5px;
+    // padding-left: 15px;
+}
+.hero__item-list-dropdovn-list > i{
+    position: absolute;
+    right: 20px;
+    top: 12px;
+
+}
+
+.two{
+    position: absolute;
+    left: 300px;
 }

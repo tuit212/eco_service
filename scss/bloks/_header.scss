@@ -3,7 +3,7 @@
     background-color: #fff;
     box-shadow: 1px 1px 3px #999;
     position: fixed;
-    z-index: 999;
+    z-index: 1000;
 
     .header{
         @include center (space-between) ;
@@ -148,13 +148,40 @@
             text-decoration: none;
             color: #7d7de2;
             transition: all 0.4s;
-            
+            z-index: 1;
             font-size: 14px;
+            position: relative;
+            // color: #fff;
 
+            
+            &::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                z-index: -1;
+                right: 0;
+                background-color: #008dcb;
+                border-radius: 10px 0;
+                // border: solid 2px transparent;
+                
+                transform: scaleX(0);
+                transition: transform 300ms ease-in-out;
+                transform-origin:left;
+            }
+            
+            &:hover::before,
+            &:focus::before{
+                transform: scaleX(1);
+            }
+            
             &:hover{
-                background-color: #00aeef;
+                // background-color: #00aeef;
+                border: 2px solid transparent;
                 color: #fff;
             }
+
         }
     }
 }
@@ -239,9 +266,8 @@
     border-radius: 25px 0;
     background-color: #00AEEF;
     transform: rotate(270deg);
-    top: 234px;
+    top: 229px;
     left: -79px;
-    z-index: 2;
 }
 
 .koribchiqishlar > span{

@@ -1,0 +1,21 @@
+
+.standards-section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .standards{
+        @include center (space-between);
+        width: 100%;
+        align-items: flex-start;
+
+        &__content{
+            width: 50%;
+        }
+
+        &__right{
+            width: 50%;
+            background-color: #00AEEF;
+            padding: 80px 50px 100px 50px;
+        }
+    }
+}
