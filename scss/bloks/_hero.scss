@@ -20,6 +20,25 @@
                     opacity: 0.5;
                 }
             }
+
+            &-list{
+                position: relative;
+                transition: all 0.3s;
+
+                &-dropdovn{
+                    padding: 0;
+                    margin: 0;
+                    position: absolute;
+                    z-index: 9999;
+                    width: 100vw;
+                    left: -145px;
+                    background-color: rgb(34, 5, 5);
+                    padding-left: 145px;
+                    top: 45px;
+                    display: none;
+                }
+
+            }
         }
     }
 }

@@ -356,7 +356,7 @@ template {
   background-color: #fff;
   box-shadow: 1px 1px 3px #999;
   position: fixed;
-  z-index: 9999;
+  z-index: 999;
 }
 .site-header .header {
   display: flex;
@@ -577,6 +577,7 @@ template {
   transform: rotate(270deg);
   top: 234px;
   left: -79px;
+  z-index: 2;
 }
 
 .koribchiqishlar > span {
@@ -632,6 +633,22 @@ template {
 }
 .hero-section .hero__item-link:hover {
   opacity: 0.5;
+}
+.hero-section .hero__item-list {
+  position: relative;
+  transition: all 0.3s;
+}
+.hero-section .hero__item-list-dropdovn {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  z-index: 9999;
+  width: 100vw;
+  left: -145px;
+  background-color: rgb(34, 5, 5);
+  padding-left: 145px;
+  top: 45px;
+  display: none;
 }
 
 .provision-section .provision {

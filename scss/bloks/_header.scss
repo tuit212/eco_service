@@ -3,7 +3,7 @@
     background-color: #fff;
     box-shadow: 1px 1px 3px #999;
     position: fixed;
-    z-index: 9999;
+    z-index: 999;
 
     .header{
         @include center (space-between) ;
@@ -241,6 +241,7 @@
     transform: rotate(270deg);
     top: 234px;
     left: -79px;
+    z-index: 2;
 }
 
 .koribchiqishlar > span{
