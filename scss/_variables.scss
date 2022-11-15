@@ -1,0 +1,13 @@
+
+@mixin center ($js) {
+    display: flex;
+    align-items: center;
+    justify-content: $js;
+}
+
+@mixin  text ($fw , $lh , $fs , $color) {
+    font-weight: $fw;
+    line-height: $lh;
+    font-size: $fs;
+    color: $color;
+}

@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font: 18px 'Manrope', sans-serif , Arial;
+    background-color: #fff;
+}
+
+img{
+    object-fit: cover;
+}
+
+:root{
+    --white:#fff;
+    --logo-color:#173A56;
+    --link-color:#22343dc4;
+    --link-color-hover:#22343D;
+    --white:#fff;
+    --box-shadow: #999;
+}
+
+.active{
+    --body-bg:#1F2E35;
+    --logo-color:#fff;
+    --link-color:rgba(255, 255, 255, 0.837);
+    --link-color-hover:#fff;
+    --white:#fff;
+    --box-shadow: rgb(248, 248, 248);
+}
