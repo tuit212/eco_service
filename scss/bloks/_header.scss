@@ -146,8 +146,10 @@
             background: transparent;
             border-radius: 10px 0;
             text-decoration: none;
-            color: #1E1EE9;
+            color: #7d7de2;
             transition: all 0.4s;
+            
+            font-size: 14px;
 
             &:hover{
                 background-color: #00aeef;
@@ -207,7 +209,7 @@
     font-size: 13px;
     box-shadow: inset -2px -2px 3px 1px #008dcb, inset 2px 2px 3px 1px #70cff3;
     transition: 0.5s;
-    
+    cursor: pointer;
     
     &:hover{
         transform: translateY(-5px);

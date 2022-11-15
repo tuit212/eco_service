@@ -1,0 +1,215 @@
+.technologies-section{
+    margin-top: 120px;
+
+    .technologies{
+
+        &__title{
+            font-size: 36px;
+            padding: 0;
+            line-height: 1.2;
+            color: #4c4c4c;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        &__text{
+            text-align: center;
+            font-weight: 500;
+            color: #969696;
+            line-height: 30px;
+            font-size: 24px;
+            margin-bottom: 100px;
+        }
+
+        &__item{
+            width: 100%;
+            @include center (space-between);
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
+
+            &-list{
+                background-color: #F1F1F1;
+                padding: 20px 15px 30px 15px;
+                width: 49%;
+                min-height: 200px;
+                border-radius: 35px 0;
+                height: 300px;
+                @include center (space-between);
+                align-items: flex-start;
+                margin-bottom: 30px;
+
+                &-img{
+                    width: 50%;
+                    position: relative;
+
+                    & > img{
+                        position: absolute;
+                        left: 30px;
+                    }
+
+                    // & > img{
+                    //     width: 167px;
+                    //     height: 164px;
+                    // }
+                }
+
+                &-content{
+                    width: 60%;
+                    margin-left: 30px;
+                    padding-left: 40px;
+                    position: relative;
+
+                    &::before{
+                        content: " ";
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        border: 8px solid #00aeff;
+                        left: 0;
+                        top: 5px;
+                        border-radius: 3px 0;
+                    }
+
+                    & > h3{
+                        position: relative;
+                        display: inline;
+                        color: #313338;
+                        font-size: 18px;
+                        font-weight: bold;
+                        line-height: 21px;
+                        vertical-align: top;
+                        text-align: left;
+                        text-transform: uppercase;
+                        padding: 0 0 15px 0;
+                        // margin: 0 0 0 25px;
+                    }
+
+                    & > ul{
+                        padding: 0;
+                        margin: 0;
+                        text-decoration: none;
+                        margin-top: 13px;
+
+                        & > li {
+                            margin-bottom: 1px;
+
+                            & > a{
+                                text-decoration: none;
+                                cursor: pointer;
+                                line-height: 24px;
+                                font-size: 15px;
+                                color: #4c4c4c;
+                                letter-spacing: .4px;
+                                transition: all 0.4s;
+
+                                &:hover{
+                                    color: #00aeff;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(3){
+                    height: 200px;
+
+                }
+                &:nth-child(4){
+                    height: 200px;
+
+                }
+                &:nth-child(5){
+                    height: 200px;
+
+                }
+            }
+
+
+
+
+        }
+
+        &__box{
+            @include center (space-between);
+            gap: 80px;
+            margin-top: 80px;
+            align-items: flex-start;
+            margin-bottom: 80px;
+
+            
+            & > p{
+                width: 37%;
+                line-height: 24px;
+                font-size: 16px;
+                color: #4c4c4c;
+                letter-spacing: 0.8px;
+                margin: 0;
+                padding: 0;
+            }
+
+            &-link{
+                display: inline-block;
+                text-align: center;
+                font-weight: 500;
+                text-decoration: none;
+                transition: all 0.4s;
+                color: #fff;
+                padding-bottom: 28px;
+                letter-spacing: 0.6px;
+                cursor: pointer;
+                display: flex;
+                position: relative;
+                max-width: 100%;
+                width: 340px;
+                min-height: 80px;
+                line-height: 24px;
+                font: 22px 'Noah',sans-serif,Arial;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 20px;
+                background: #00aeef;
+                border-radius: 20px 0;
+                box-shadow: inset -2px -2px 3px 1px #008dcb, inset 2px 2px 3px 1px #70cff3;
+                transform: translateY(0);
+
+                &:hover{
+                    color: #fff;
+                    background-color: #0599D0;
+                    transform: translateY(-8px);
+                }
+            }
+
+            &-texts{
+                width: 20%;
+
+                & > a {
+                    vertical-align: top;
+                    margin: 0 0 6px 0;
+                    color: #00aeef;
+                    text-decoration: none;
+
+                    & > strong{
+                        color: #18a1db;
+                        font-weight: 600;
+                        font-size: 30px;
+                    }
+
+                    & > span{
+                        color: orange !important;
+                    }
+                }
+
+                & > span{
+                    font-size: 18px;
+                    color: #4c4c4c;
+                }
+            }
+        }
+    }
+}
+
+
+.position > img{
+    top: 60px;
+}
